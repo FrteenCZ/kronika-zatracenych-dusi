@@ -1,0 +1,14 @@
+{
+  "alwaysUpdateLinks": true,
+  "foldIndent": false,
+  "showLineNumber": false,
+  "newFileLocation": "root",
+  "newFileFolderPath": "Koncepty",
+  "attachmentFolderPath": "./Přílohy",
+  "pdfExportSettings": {
+    "pageSize": "Letter",
+    "landscape": false,
+    "margin": "0",
+    "downscalePercent": 100
+  }
+}

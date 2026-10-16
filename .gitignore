@@ -1,0 +1,8 @@
+# --- Obsidian specifika ---
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/graph.json
+.obsidian/bookmarks.json
+.obsidian/appearance.json
+.obsidian/plugins/
+.handwriting/trash/

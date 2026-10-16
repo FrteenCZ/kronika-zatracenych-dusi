@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="01 - Obchůzka"/>
+        <attribute name="authors" value="frtanta"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-10-01 12:42:18"/>
+        <attribute name="created" value="ZnJ0YW50YTtDZXNpdW07MjAyNi0xMC0wMTsxMjo0MjoxODsx"/>
+        <attribute name="edited" value="ZnJ0YW50YTtDZXNpdW07MjAyNi0xMC0wMTsxMjo0MjoxODsxOzE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="ax" type="Real" array="False" size=""/>
+            <input variable="ax"/>
+            <declare name="ay" type="Real" array="False" size=""/>
+            <input variable="ay"/>
+            <declare name="distance" type="Real" array="False" size=""/>
+            <input variable="distance"/>
+            <declare name="angle" type="Real" array="False" size=""/>
+            <input variable="angle"/>
+            <declare name="bx" type="Real" array="False" size=""/>
+            <assign variable="bx" expression="ax + cos(angle / 360 * 2 * pi) * distance"/>
+            <declare name="by" type="Real" array="False" size=""/>
+            <assign variable="by" expression="ay + sin(angle / 360 * 2 * pi) * distance"/>
+            <declare name="cx" type="Real" array="False" size=""/>
+            <assign variable="cx" expression="ax + cos((angle + 45) / 360 * 2 * pi) * distance * sqrt(2)"/>
+            <declare name="cy" type="Real" array="False" size=""/>
+            <assign variable="cy" expression="ay + sin((angle + 45) / 360 * 2 * pi) * distance * sqrt(2)"/>
+            <declare name="dx" type="Real" array="False" size=""/>
+            <assign variable="dx" expression="ax + cos((angle + 90) / 360 * 2 * pi) * distance"/>
+            <declare name="dy" type="Real" array="False" size=""/>
+            <assign variable="dy" expression="ay + sin((angle + 90) / 360 * 2 * pi) * distance"/>
+            <output expression="&quot;polygon((&quot; &amp; ToFixed(ax, 2) &amp; &quot;,&quot; &amp; ToFixed(ay, 2) &amp; &quot;),(&quot; &amp; ToFixed(bx, 2) &amp; &quot;,&quot; &amp; ToFixed(by, 2) &amp; &quot;),(&quot; &amp; ToFixed(cx, 2) &amp; &quot;,&quot; &amp; ToFixed(cy, 2) &amp; &quot;),(&quot; &amp; ToFixed(dx, 2) &amp; &quot;,&quot; &amp; ToFixed(dy, 2) &amp; &quot;))&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

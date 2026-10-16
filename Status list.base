@@ -1,0 +1,18 @@
+views:
+  - type: table
+    name: Tabulka
+    filters:
+      and:
+        - "!type.isEmpty()"
+        - file.folder != "Templates"
+    order:
+      - file.name
+      - date
+      - status
+      - type
+      - katedra
+    sort:
+      - property: date
+        direction: ASC
+  - type: table
+    name: Zobrazení

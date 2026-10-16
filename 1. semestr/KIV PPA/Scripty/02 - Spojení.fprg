@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="02 - Spojení"/>
+        <attribute name="authors" value="frtanta"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-10-10 22:35:03"/>
+        <attribute name="created" value="ZnJ0YW50YTtDZXNpdW07MjAyNi0xMC0xMDsyMjozNTowMzsx"/>
+        <attribute name="edited" value="ZnJ0YW50YTtDZXNpdW07MjAyNi0xMC0xMDsyMjozNTowMzsxOzE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="datastarthour" type="Integer" array="False" size=""/>
+            <input variable="datastarthour"/>
+            <declare name="datastartmin" type="Integer" array="False" size=""/>
+            <input variable="datastartmin"/>
+            <declare name="datalenghthour" type="Integer" array="False" size=""/>
+            <input variable="datalenghthour"/>
+            <declare name="datalenghtmin" type="Integer" array="False" size=""/>
+            <input variable="datalenghtmin"/>
+            <declare name="streamstarthour" type="Integer" array="False" size=""/>
+            <input variable="streamstarthour"/>
+            <declare name="streamstartmin" type="Integer" array="False" size=""/>
+            <input variable="streamstartmin"/>
+            <declare name="streamlenghthour" type="Integer" array="False" size=""/>
+            <input variable="streamlenghthour"/>
+            <declare name="streamlenghtmin" type="Integer" array="False" size=""/>
+            <input variable="streamlenghtmin"/>
+            <declare name="datastartday" type="Integer" array="False" size=""/>
+            <assign variable="datastartday" expression="0"/>
+            <if expression="datastarthour &lt; 14">
+                <then>
+                    <assign variable="datastartday" expression="1"/>
+                </then>
+                <else/>
+            </if>
+            <declare name="streamstartday" type="Integer" array="False" size=""/>
+            <assign variable="streamstartday" expression="0"/>
+            <if expression="streamstarthour &lt; 14">
+                <then>
+                    <assign variable="streamstartday" expression="1"/>
+                </then>
+                <else/>
+            </if>
+            <declare name="datastartuniks" type="Integer" array="False" size=""/>
+            <assign variable="datastartuniks" expression="converttouniks(datastartday, datastarthour, datastartmin)"/>
+            <declare name="dataenduniks" type="Integer" array="False" size=""/>
+            <assign variable="dataenduniks" expression="datastartuniks + converttouniks(0, datalenghthour, datalenghtmin)"/>
+            <declare name="streamstartuniks" type="Integer" array="False" size=""/>
+            <assign variable="streamstartuniks" expression="converttouniks(streamstartday, streamstarthour, streamstartmin)"/>
+            <declare name="streamenduniks" type="Integer" array="False" size=""/>
+            <assign variable="streamenduniks" expression="streamstartuniks + converttouniks(0, streamlenghthour, streamlenghtmin)"/>
+            <if expression="dataenduniks &lt;= streamstartuniks">
+                <then>
+                    <output expression="&quot;v pohode&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="dataenduniks &lt;= streamenduniks">
+                        <then>
+                            <output expression="&quot;neuvidis &quot; &amp; ToString(dataenduniks - streamstartuniks) &amp; &quot; minut&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;to nedas&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+    <function name="converttouniks" type="Integer" variable="ReturnValue">
+        <parameters>
+            <parameter name="days" type="Integer" array="False"/>
+            <parameter name="hours" type="Integer" array="False"/>
+            <parameter name="minutes" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="ReturnValue" type="Integer" array="False" size=""/>
+            <comment text="&#10;        Combines days, hours and minutes into a uniks time stamp&#10;        epoch starts at 00:00 the first day&#10;&#10;        returns minutes since 00:00 first day&#10;    "/>
+            <declare name="timestamp" type="Integer" array="False" size=""/>
+            <assign variable="timestamp" expression="(days * 24 + hours) * 60 + minutes"/>
+            <assign variable="ReturnValue" expression="timestamp"/>
+        </body>
+    </function>
+</flowgorithm>

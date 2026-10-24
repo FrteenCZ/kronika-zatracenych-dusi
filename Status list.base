@@ -5,6 +5,13 @@ views:
       and:
         - "!type.isEmpty()"
         - file.folder != "Templates"
+    groupBy:
+      property: status
+      direction: ASC
+    groupOrder:
+      - todo
+      - stub
+      - done
     order:
       - file.name
       - date
@@ -12,6 +19,8 @@ views:
       - type
       - katedra
     sort:
+      - property: type
+        direction: DESC
       - property: date
         direction: ASC
   - type: table

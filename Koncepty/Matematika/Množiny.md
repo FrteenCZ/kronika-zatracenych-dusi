@@ -2,7 +2,7 @@
 handwriting-page-id: a30764ee-fc56-4fab-9bd8-2cd42026a084
 type: concept
 aliases:
-status: draft
+status: todo
 katedra: KMA
 ---
 

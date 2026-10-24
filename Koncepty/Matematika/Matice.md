@@ -1,7 +1,7 @@
 ---
 type: concept
 aliases:
-status: draft
+status: todo
 katedra: KMA
 ---
 **Matice typu** ${}m/n{}$ je soubor ${}m\cdot n{}$ prvků uspořádaných do ${}m{}$ řádků a ${}n{}$ sloupců:

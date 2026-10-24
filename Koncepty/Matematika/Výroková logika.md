@@ -1,7 +1,7 @@
 ---
 type: concept
 aliases:
-status: draft
+status: todo
 katedra: KMA
 ---
 # **výrok** - oznamovací věta, o které má smysl přemýšlet, zda je pravdivá či ne

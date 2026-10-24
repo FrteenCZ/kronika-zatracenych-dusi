@@ -1,7 +1,7 @@
 ---
 type: concept
 aliases:
-status: draft
+status: todo
 katedra: KKY
 ---
 # Matematický model

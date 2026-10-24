@@ -123,7 +123,7 @@ prostoru ${}\mathcal{L}{}$, potom množina všech lineárních kombinací prvků
 
 3. Každé dvě báze nenulového, konečně generovaného lineárního vektorového prostoru mají stejný počet prvků.
 > [!done]- Důkaz
-> 2x použiju Steinitzovu větu, kdy ${}N{}$ i ${}M{}$ jsou báze ${}\implies \begin{align}n\leq m \text{ z 1. použití} \\  n\geq m \text{ z 2. použití}\end{align}, n=m{}$
+> 2x použiju Steinitzovu větu, kdy ${}N{}$ i ${}M{}$ jsou báze ${}\implies \begin{aligned}n\leq m \text{ z 1. použití} \\  n\geq m \text{ z 2. použití}\end{aligned}, n=m{}$
 
 
 > [!note] Definice 4.
@@ -137,7 +137,7 @@ prostoru ${}\mathcal{L}{}$, potom množina všech lineárních kombinací prvků
 
 > [!done]- Důkaz
 > Zvolme bázi ${}b_{1},b_{2},\dots,b_{n}{}$ a pro ${}\forall x \in \mathcal{L}{}$ existují 2 různé vyjádření
-> ${}\begin{align}x=\alpha_{1}b_{1}+\alpha_{2}b_{2}+\dots+\alpha_{n}b_{n} \\  x=\beta_{1}b_{1}+\beta_{2}b_{2}+\dots+\beta_{n}b_{n}\end{align}{}$, potom: $\begin{align}0 = x - x &= (\alpha_{1}b_{1}+\dots+\alpha_{n}b_{n}) - (\beta_{1}b_{1}+\dots+\beta_{n}b_{n})= \\&= (\alpha_{1}-\beta_{1})b_{1}+\dots+(\alpha_{n}-\beta_{n})b_{n}\end{align}$
+> ${}\begin{aligned}x=\alpha_{1}b_{1}+\alpha_{2}b_{2}+\dots+\alpha_{n}b_{n} \\  x=\beta_{1}b_{1}+\beta_{2}b_{2}+\dots+\beta_{n}b_{n}\end{aligned}{}$, potom: $\begin{aligned}0 = x - x &= (\alpha_{1}b_{1}+\dots+\alpha_{n}b_{n}) - (\beta_{1}b_{1}+\dots+\beta_{n}b_{n})= \\&= (\alpha_{1}-\beta_{1})b_{1}+\dots+(\alpha_{n}-\beta_{n})b_{n}\end{aligned}$
 > ale ${}b_{1},b_{2},\dots ,b_{n}{}$ jsou LN a tedy ${}\alpha_{1}-\beta_{1}=0,\alpha_{2}-\beta_{2}=0,\dots,\alpha_{n}-\beta_{n}=0{}$
 > ${}\implies \alpha_{1}=\beta_{1} \land\alpha_{2}=\beta_{2}\land\dots \land\alpha_{n}=\beta_{n}{}$ a nemáme 2 různé ale jen jedno vyjádření 
 
@@ -182,13 +182,13 @@ v_{3}=[2,1,-2]^T
 \end{align}
 $$
 
-2) ${}\mathbb{R}_{n}{}$: kanonická báze ${}\mathbb{R}_{n}:\begin{align}e_{1}=[1,0,\dots 0]^T \\  e_{2}=[0,1,\dots,0]^T \\  \vdots \\  e_{n}=[0,0,\dots,1]^T\end{align}\implies \dim \mathbb{R}_{n}=n{}$
+2) ${}\mathbb{R}_{n}{}$: kanonická báze ${}\mathbb{R}_{n}:\begin{aligned}e_{1}=[1,0,\dots 0]^T \\  e_{2}=[0,1,\dots,0]^T \\  \vdots \\  e_{n}=[0,0,\dots,1]^T\end{aligned}\implies \dim \mathbb{R}_{n}=n{}$
 	!${}\implies{}$ tedy v ${}\mathbb{R}_{n}{}$
 	- každých **méně než ${}n{}$** prvků není **generující**
 	- každých **více než ${}n{}$** prvků jsou **LZ**
 	- každých **${}n{}$ prvků** je báze ${}\mathbb{R}_{n}{}$, pokud jsou **LN**
 
-3) ${}P_{2}{}$: kanonická bázé ${}P_{2}: \begin{align}p_{1}(x)=1 \\  p_{2}(x)=x \\  p_{3}(x)=x^{2}\end{align}\implies \dim P_{2}=3{}$   *(n+1)*
+3) ${}P_{2}{}$: kanonická bázé ${}P_{2}: \begin{aligned}p_{1}(x)=1 \\  p_{2}(x)=x \\  p_{3}(x)=x^{2}\end{aligned}\implies \dim P_{2}=3{}$   *(n+1)*
 
 4) $$
    \begin{align}

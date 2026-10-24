@@ -5,97 +5,73 @@ date: 01-10-2026
 katedra: KMA
 ---
 
-> **Téma:** Násobení matic a řešení soustavy rovnic
+> **Téma:** ŘEŠENÍ SOUSTAV ROVNIC MATICOVĚ
 > **Koncepty:** [[Matice]]
 > **Source**: [[P01b-vyplneny.pdf|P01b.pdf]]
 
-# Násobení matic
-${}A{}$ typu ${}m/n{}$ a ${}B{}$ typu ${}n/p{}$, vznikne ${}C{}$ typu ${}m/p{}$
 
-$$
-c_{ik}=a_{i1}b_{1k}+a_{i 2}b_{2k}+\dots+a_{in}b_{nk}=\sum_{j=1}^na_{ij}b_{jk}
-$$
-> [!tip]
->  "Skalární součin řádků A a sloupců B jako vektorů"
+> [!note] Definice
+>  Následující úpravy matice ${}\mathbf{A}{}$ typu ${}m/n{}$
+>  1. vyměnění dvou řádků (resp. sloupců) matice,
+>  2. vynásobení řádku (resp. sloupce) matice nenulovým číslem,
+>  3. přičtení ${}k{}$-násobku ${}j{}$-tého řádku (resp. sloupce) k řádku (resp. sloupci) ${}i{}$-tému, ${}i \neq j, 1 \leq i, j \leq m{}$ ( resp. ${}1 \leq i, j \leq n{}$)
+>  se nazývají **elementární řádkové (resp. sloupcové) úpravy** matice ${}\mathbf{A}{}$.
 
-př.: 
 
-$$
-\begin{align}
-A&=\begin{bmatrix}
-2 & 4 \\
-1 & 2 \\
--1 & -2
-\end{bmatrix} &  & B=\begin{bmatrix}
-3 & 4 & 1 \\
-0 & 2 & -2 \\
-3 & 1 & 4
-\end{bmatrix} \\
-C&=A\cdot B=nelze &  &D=B\cdot A=\begin{bmatrix}
-3\cdot 2+4\cdot 1+1\cdot(-1) & 3\cdot 4+4\cdot 2+1\cdot(-2) \\
-0+2+2 & 0+4+4 \\
-6+1-4 & 12+2-8
-\end{bmatrix} =\begin{bmatrix}
-9 & 18 \\
-4 & 8 \\
-3 & 6
+> [!note] Definice
+> Řekneme, že matice ${}\mathbf{A}{}$ je ve **stupňovitém tvaru**, jestliže platí:
+> je-li v některém řádku ${}i{}$-tý prvek první nenulový, potom ve všech dalších řádkách jsou všechny prvky od 1. až do ${}i{}$-tého včetně rovny ${}0{}$.
+
+Matici lze pomocí řádkových elementárních úprav převést na matici ve stupňovitém tvaru.
+**Postup se nazývá Gaussova eliminační metoda**.
+
+
+> [!note] Definice 
+> Nechť je dána matice ${}\mathbf{A}{}$ typu ${}m/n{}$, ${}n{}$-členný aritmetický vektor ${}x = [x_{1} , x_{2} , \dots, x_{n}]^T {}$, ${}m{}$-členný aritmetický vektor ${}b = [b_{1} , b_{2} , \dots, b_{m} ]^T{}$.
+> 
+> Potom ${}\mathbf{A}x = b{}$ je **soustava ${}m{}$ lineárních rovnic o ${}n{}$ neznámých**.
+> 
+> Jestliže ${}\mathbf{A} = [a_{ij} ]{}$, potom ${}\mathbf{A}x = b{}$ rozepíšeme do tvaru:
+> $$
+\begin{bmatrix}
+a_{11} & a_{12} & \dots & a_{1n} \\
+a_{21} & a_{22} & \dots & a_{2n} \\
+\vdots & \vdots & \ddots & \vdots \\
+a_{m1} & a_{m 2} & \dots & a_{mn}
+\end{bmatrix}\cdot \begin{bmatrix}
+x_{1} \\
+x_{2} \\
+\vdots \\
+x_{n}
+\end{bmatrix}=\begin{bmatrix}
+b_{1} \\
+b_{2} \\
+\vdots \\
+b_{m}
 \end{bmatrix}
-\end{align}
-$$
-
-> [!warning]
-> Násobení matic není komutativní
-
-> [!note] Věta 2
-> 1. $A(BC) = (AB)C$, - asociativní
-> 2. $(A + B)C = AC + BC$, distributivní
-> 3. $C(A + B) = CA + CB$, distributivní
-> 4. $(AB)^T = B^TA^T$,
-> 5. $(\lambda A)B = A(\lambda B) = \lambda(AB)$.
-
-
----
-
-
-
-
-
-$$
+> $$
+> t.j.
+> $$
 \begin{align}
-x_{1}+2x_{2}-3x_{3}&=1 \\
-2x_{1}-3x_{2}+4x_{3}&=5 \\
-x_{1}-x_{2}+x_{3}&=2 \\
- \\
- A=\begin{bmatrix}
- 1 & 2 & -3 \\
- 2 & -3 & 4 \\
- 1 & -1 & 1
- \end{bmatrix} x=\begin{bmatrix}
- x_{1} \\
- x_{2} \\
- x_{3}
- \end{bmatrix}b=\begin{bmatrix}
- 1 \\
- 5 \\
- 2
- \end{bmatrix} \\
- \\
-\begin{bmatrix*}[ccc|c]
-1 & 2 & -3  & 1 \\
-2 & -3 & 4  & 5 \\
-1 & -1 & 1  & 2
-\end{bmatrix*}\sim\begin{bmatrix*}[ccc|c]
-1 & 2 & -3 & 1 \\
-0 & -7 & 10  & 3 \\
-0 & -3 & 4 & 1
-\end{bmatrix*}\sim\begin{bmatrix*}[ccc|c]
-1 & 2 & -3  & 1 \\
-0 & -1 & 2 & 1 \\
-0 & 0 & -2 & -2
-\end{bmatrix*}\sim\begin{bmatrix*}[ccc|c]
-1 & 2 & -3  & 1 \\
-0 & 1 & -2 & -1 \\
-0 & 0 & 1 & 1
-\end{bmatrix*}
+a_{11}x_{1}+a_{12}x_{2}+\dots +a_{1n}x_{n}&=b_{1}, \\
+a_{21}x_{1}+a_{22}x_{2}+\dots +a_{2n}x_{n}&=b_{2}, \\
+&\vdots \\
+a_{m1}x_{1}+a_{m2}x_{2}+\dots +a_{mn}x_{n}&=b_{m},
 \end{align}
-$$
+> $$
+> 
+> Matice ${}\mathbf{A} = [a_{ij} ]{}$ se nazývá **matice soustavy**.
+> Vektor ${}x = [x_{1} , x_{2} , \dots, x_{n} ]^T{}$ **vektor neznámých**.
+> Vektor ${}b = [b_{1} , b_{2} , \dots, b_{m} ]^T{}$ **vektor pravých stran**.
+> 
+> Matici ${}[\mathbf{A}|b] =\begin{bmatrix*}[cccc|c]a_{11} & a_{12} & \dots & a_{1n}  & b_{1} \\ a_{21} & a_{22} & \dots & a_{2n} & b_{2} \\ \vdots & \vdots & \ddots & \vdots & \vdots \\ a_{m1} & a_{m 2} & \dots & a_{mn}  & b_{m}\end{bmatrix*}{}$ nazýváme **rozšířená matice soustavy**.
+
+
+> [!note] Definice 
+> Nechť ${}\mathbf{A}x = b{}$ je soustava ${}m{}$ lineárních rovnic o ${}n{}$ neznámých. Potom každý ${}n{}$-členný aritmetický vektor ${}x{}$, pro který platí ${}\mathbf{A}x = b{}$, nazýváme **řešení soustavy rovnic**.
+> Soustavy lineárních rovnic nazýváme **ekvivalentní**, jestliže mají stejné množiny řešení.
+
+
+> [!quote] Věta 1 
+> Jestliže matice ${}[\mathbf{C}|d]{}$ vznikne z matice ${}[\mathbf{A}|b]{}$ užitím řádkových elementárních úprav, potom soustavy lineárních rovnic ${}\mathbf{A}x = b{}$ a ${}\mathbf{C}x = d{}$ jsou ekvivalentní.
+

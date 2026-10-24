@@ -1,5 +1,5 @@
 ---
-fc-event-uid: "_c5lm6pb9cgmjcd1j74q3cb9h6gmj2c1d68o34di0edq62ppdetpisuj3ekn66ug"
+fc-event-uid: "_c5lm6pb9cgmjcd1j74q3cb9i64mj2c1d68o34di0edq62ppdetpisuj3ekn66ug"
 fc-calendar-id: "google_1"
 katedra: KMA
 ---
@@ -34,3 +34,4 @@ katedra: KMA
 - [[SDP - C02]]
 - [[SDP - C03]]
 - [[SDP - C04]]
+- [[SDP - C05]]

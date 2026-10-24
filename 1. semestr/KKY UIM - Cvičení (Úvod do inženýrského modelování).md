@@ -1,5 +1,5 @@
 ---
-fc-event-uid: "_c5lm6pb9cgmjcd1j6or3gb9h6kmj2c1d68o34di0edq62ppdetpisuj3ekn66ug"
+fc-event-uid: "_c5lm6pb9cgmjcd1j6or3gb9i68mj2c1d68o34di0edq62ppdetpisuj3ekn66ug"
 fc-calendar-id: "google_1"
 katedra: KKY
 ---
@@ -32,4 +32,5 @@ katedra: KKY
 - [[UIM - C02]]
 - [[UIM - C03]]
 - [[UIM - C04]]
+- [[UIM - CO5]]
 

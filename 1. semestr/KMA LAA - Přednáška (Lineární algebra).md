@@ -3,6 +3,7 @@ fc-event-uid: "_c5lm6pb9cgmjcd1j6ssj4b9h6kmj2c1d68o34di0edq62ppdetpisuj3ekn66ug"
 fc-calendar-id: "google_1"
 katedra: KMA
 ---
+
 > [!info] Rozvrhové informace
 > - **Vyučující:** RNDr. Jan Ekstein, Ph.D.
 > - **Místnost**: EP130, US217
@@ -44,3 +45,5 @@ katedra: KMA
 - [[LAA - P03a]]
 - [[LAA - P03b]]
 - [[LAA - P04]]
+- [[LAA - P05a]]
+- [[LAA - P05b]]

@@ -1,5 +1,5 @@
 ---
-fc-event-uid: "_c5lm6pb9cgmjcd1j70p3eb9h68mj2c1d68o34di0edq62ppdetpisuj3ekn66ug"
+fc-event-uid: "_c5lm6pb9cgmjcd1j70p3eb9h74mj2c1d68o34di0edq62ppdetpisuj3ekn66ug"
 fc-calendar-id: "google_1"
 katedra: KMA
 ---

@@ -1,5 +1,5 @@
 ---
-fc-event-uid: "_c5lm6pb9cgmjcd1j70ojab9h6kmj2c1d68o34di0edq62ppdetpisuj3ekn66ug"
+fc-event-uid: "_c5lm6pb9cgmjcd1j70ojab9i68mj2c1d68o34di0edq62ppdetpisuj3ekn66ug"
 fc-calendar-id: "google_1"
 katedra: KMA
 ---
@@ -55,3 +55,5 @@ katedra: KMA
 - [[MA1 - P06]]
 - [[MA1 - P07]]
 - [[MA1 - P08]]
+- [[MA1 - P09]]
+- [[MA1 - P10]]

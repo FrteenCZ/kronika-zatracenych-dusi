@@ -34,3 +34,4 @@ katedra: KMA
 - [[SMP - C03]]
 - [[SMP - C04]]
 - [[SMP - C05]]
+- [[SMP - C06]]

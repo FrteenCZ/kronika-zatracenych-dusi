@@ -6,5 +6,5 @@ katedra: KMA
 ---
 
 > **Téma:** 
-> **Koncepty:** [[Množiny]], [[Výroková logika]]
+> **Koncepty:** [[Číselné množiny]], [[Výroková logika]]
 

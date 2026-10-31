@@ -1,35 +1,42 @@
 ---
 type: concept
 aliases:
-status: todo
+status: done
 katedra: KMA
 ---
-# **výrok** - oznamovací věta, o které má smysl přemýšlet, zda je pravdivá či ne
-př.:
-	A: venku prší.   nepravdivý výrok $p(A)=0$
-	B: $1+1=2$            pravdivý výrok.    $p(A)=1$
-	C: běž pryč.       není výrok
-	D: kolik je hodin? není výrok
-	E: $x+1=2$             není výrok, je to výroková forma
+> [!note] Definice
+>  **Výrok** je oznamovací věta, o které má smysl přemýšlet, zda je pravdivá či ne
 
-# Negace výroku
-opačný výrok, výrok s opačnou pravdivostní hodnotou
+> [!example]- 
+> 
+> $$
+> \begin{align}
+> &\text{A: venku prší.} &&  \text{nepravdivý výrok } p(A)=0 \\
+> &\text{B: } 1+1=2 &&  \text{pravdivý výrok } p(B)=1 \\
+> &\text{C: běž pryč } &&  \text{není výrok} \\
+> &\text{D: kolik je hodin? } &&  \text{není výrok} \\
+> &\text{E: } x+1=2 &&  \text{není výrok, je to výroková forma}
+> \end{align}
+> $$
 
-značka: $\overline{A}, \neg{A}, \mathrm{non} A$
-"není pravda, že $A$"
 
-např.:
-	Není pravda, že venku prší
-	Není pravda, že $1+1=2$
+> [!note] Definice (Negace výroku)
+> opačný výrok, výrok s opačnou pravdivostní hodnotou
+> 
+> značka: $\overline{A}, \neg{A}, \mathrm{non} A$
+> "není pravda, že $A$"
 
-# Složené výroky
-výroky lze skládat pomocí logických spojek
+> [!example]-
+> Není pravda, že venku prší
+> Není pravda, že $1+1=2$
 
-- konjunkce - $A \land B$   "A a zároveň B"
-- disjunkce - $A \lor B$     "A nebo B"
-- implikace - $A \implies B$   "Pokud A, potom B"
-- ekvivalence - $A \Longleftrightarrow B$ ($(A\implies B) \land (B \implies A)$) "A právě tehdy, když B"
-
+> [!note] Definice (Složené výroky)
+> výroky lze skládat pomocí logických spojek
+> 
+> - konjunkce - $A \land B$   "A a zároveň B"
+> - disjunkce - $A \lor B$     "A nebo B"
+> - implikace - $A \implies B$   "Pokud A, potom B"
+> - ekvivalence - $A \Longleftrightarrow B$ ($(A\implies B) \land (B \implies A)$) "A právě tehdy, když B"
 
 | $A$ | $B$ | $A \land B$ | $A \lor B$ | $A \implies B$ | $A\Longleftrightarrow B$ |
 | :-: | :-: | :---------: | :--------: | :------------: | :----------------------: |
@@ -38,7 +45,6 @@ výroky lze skládat pomocí logických spojek
 |  0  |  1  |      0      |     1      |       1        |            0             |
 |  0  |  0  |      0      |     0      |       1        |            1             |
 
-## implikace
 pozn.: implikace $A \implies B$
 $A$ je postačující podmínka pro $B$
 $B$ je nutné podmínka pro $A$
@@ -56,28 +62,37 @@ ${}\overline{B}\implies\overline{A}{}$                       X             ${}B\
 
 **negace implikace**: ${}\overline{A\implies B}\Leftrightarrow A\land\overline{B}{}$
 
-# Kvantifikované výroky
-- výroková forma: ${}V(x), V(x,y),\dots{}$
-	- ${}V(x){}$ je výrokem pro konkrétní hodnotou proměnné ${}x{}$
-	- např.: ${}V(x):x+1=1{}$
-- **kvantifikace**:
-	- ${}\forall{}$ velký kvantifikátor
-		- např.: ${}\forall x\in \mathbb{R}:x+1=1~(p=1){}$
-	- ${}\exists{}$ malý/existenční kvantifikátor
-		- např.: ${}\exists x\in \mathbb{R}:x+1=1~(p=1){}$
-		- ${}\exists!{}$ "existuje právě jedno"
-		- ${}\nexists{}$ "neexistuje"
-	- pozn.:
-		- ${}V(x,y){}$ je třeba kvantifikovat všechny proměné
-			- ${}\forall x\in \mathbb{R}:x+y=1{}$ není výrok
-		- !**záleží na pořadí**
-			- ${}\forall x\in \mathbb{R}\exists y\in \mathbb{R}:x+y=1{}$ pravdivý výrok
-			- ${}\exists y\in \mathbb{R}\forall x\in \mathbb{R}:x+y=1{}$ nepravdivý výrok
+> [!note] Definice (Kvantifikované výroky)
+> 
+> - výroková forma: ${}V(x), V(x,y),\dots{}$
+> 	- ${}V(x){}$ je výrokem pro konkrétní hodnotou proměnné ${}x{}$
+> 	- např.: ${}V(x):x+1=1{}$
+> - **kvantifikace**:
+> 	- ${}\forall{}$ velký kvantifikátor
+> 		- např.: ${}\forall x\in \mathbb{R}:x+1=1~(p=1){}$
+> 	- ${}\exists{}$ malý/existenční kvantifikátor
+> 		- např.: ${}\exists x\in \mathbb{R}:x+1=1~(p=1){}$
+> 		- ${}\exists!{}$ "existuje právě jedno"
+> 		- ${}\nexists{}$ "neexistuje"
+> 	- pozn.:
+> 		- ${}V(x,y){}$ je třeba kvantifikovat všechny proměné
+> 			- ${}\forall x\in \mathbb{R}:x+y=1{}$ není výrok
+> 		- !**záleží na pořadí**
+> 			- ${}\forall x\in \mathbb{R}\exists y\in \mathbb{R}:x+y=1{}$ pravdivý výrok
+> 			- ${}\exists y\in \mathbb{R}\forall x\in \mathbb{R}:x+y=1{}$ nepravdivý výrok
+
 
 ---
 
+
+> [!note] Definice
+> **Tautologie** - výraz který je vždy pravdivý - ${}A\lor \neg A{}$
+>
+> **Kontradikce** - výraz který je vždy nepravdivý - ${}A\land \neg A{}$  
+
+
 př.:
-$\gamma=(A\implies B)\Longleftrightarrow(A\land \neg B)$
+$\gamma=(A\implies B)\Longleftrightarrow(A\land \neg B)$ - Kontradikce
 
 | $A$ | $B$ | $A\implies B$ | $A\land \neg B$ | $\gamma$ |
 | :-: | :-: | :-----------: | :-------------: | :------: |
@@ -85,9 +100,9 @@ $\gamma=(A\implies B)\Longleftrightarrow(A\land \neg B)$
 |  1  |  0  |       0       |        1        |    0     |
 |  0  |  1  |       1       |        0        |    0     |
 |  0  |  0  |       1       |        0        |    0     |
-**Kondratikce**
 
-${}\ell=((A\implies B)\land(B\implies C))\implies(A\implies C){}$
+
+${}\ell=((A\implies B)\land(B\implies C))\implies(A\implies C){}$ - Tautologie
 
 | $A$ | $B$ | $C$ | ${}A\implies B{}$ | ${}B\implies C{}$ | ${}(A\implies B)\land(B\implies C){}$ | ${}A\implies C{}$ | ${}\ell{}$ |
 | :-: | :-: | :-: | :---------------: | :---------------: | :-----------------------------------: | :---------------: | :--------: |
@@ -99,5 +114,4 @@ ${}\ell=((A\implies B)\land(B\implies C))\implies(A\implies C){}$
 |  0  |  1  |  0  |         1         |         0         |                   0                   |         1         |     1      |
 |  0  |  0  |  1  |         1         |         1         |                   1                   |         1         |     1      |
 |  0  |  0  |  0  |         1         |         1         |                   1                   |         1         |     1      |
-**Tautologie**
 

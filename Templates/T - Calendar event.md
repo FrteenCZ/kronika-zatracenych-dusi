@@ -21,13 +21,6 @@ katedra:
 
 ---
 
-# Úkoly & Deadlines
-- [ ] 
-
----
-
 # Přehled hodin
 
-- 
-
-
+-

@@ -22,11 +22,6 @@ katedra: KMA
 
 ---
 
-# Úkoly & Deadlines
-- [ ] 
-
----
-
 # Přehled hodin
 
 - [[SMP - C01]]
@@ -35,3 +30,4 @@ katedra: KMA
 - [[SMP - C04]]
 - [[SMP - C05]]
 - [[SMP - C06]]
+- [[SMP - C07]]

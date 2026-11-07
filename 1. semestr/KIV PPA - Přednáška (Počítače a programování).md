@@ -28,13 +28,6 @@ katedra: KIV
 
 ---
 
-# Úkoly & Deadlines
-- [ ] 
-
----
-
 # Přehled hodin
 
-- 
-
-
+-

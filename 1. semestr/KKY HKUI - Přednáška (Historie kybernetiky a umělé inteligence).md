@@ -32,15 +32,9 @@ katedra: KKY
 
 ---
 
-# Úkoly & Deadlines
-- [ ] 
-
----
-
 # Přehled hodin
 
 - [[HKUI - P01]]
 - [[HKUI - P02]]
 - [[HKUI - P03]]
-
-
+- [[HKUI - P05]]

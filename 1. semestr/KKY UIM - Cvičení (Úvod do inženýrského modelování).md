@@ -21,16 +21,11 @@ katedra: KKY
 
 ---
 
-# Úkoly & Deadlines
-- [ ] 
-
----
-
 # Přehled hodin
 
 - [[UIM - C01]]
 - [[UIM - C02]]
 - [[UIM - C03]]
 - [[UIM - C04]]
-- [[UIM - CO5]]
-
+- [[UIM - C05]]
+- [[UIM - C06]]

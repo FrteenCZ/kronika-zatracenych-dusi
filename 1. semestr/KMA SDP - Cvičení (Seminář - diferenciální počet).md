@@ -23,11 +23,6 @@ katedra: KMA
 
 ---
 
-# Úkoly & Deadlines
-- [ ] 
-
----
-
 # Přehled hodin
 
 - [[SDP - C01]]
@@ -35,3 +30,4 @@ katedra: KMA
 - [[SDP - C03]]
 - [[SDP - C04]]
 - [[SDP - C05]]
+- [[SDP - C07]]

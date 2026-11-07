@@ -40,11 +40,6 @@ katedra: KMA
 
 ---
 
-# Úkoly & Deadlines
-- [ ] 
-
----
-
 # Přehled hodin
 
 - [[MA1 - P01]]
@@ -57,3 +52,5 @@ katedra: KMA
 - [[MA1 - P08]]
 - [[MA1 - P09]]
 - [[MA1 - P10]]
+- [[MA1 - P11]]
+- [[MA1 - P12]]

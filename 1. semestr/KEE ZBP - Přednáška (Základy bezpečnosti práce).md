@@ -26,13 +26,7 @@ katedra: KEE
 
 ---
 
-# Úkoly & Deadlines
-- [ ] 
-
----
 
 # Přehled hodin
 
-- 
-
-
+-

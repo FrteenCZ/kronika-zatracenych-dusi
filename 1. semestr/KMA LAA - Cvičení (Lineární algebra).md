@@ -15,11 +15,6 @@ katedra: KMA
 
 ---
 
-# Úkoly & Deadlines
-- [ ] 
-
----
-
 # Přehled hodin
 
 - [[LAA - C01]]
@@ -27,3 +22,4 @@ katedra: KMA
 - [[LAA - C03]]
 - [[LAA - C04]]
 - [[LAA - C05]]
+- [[LAA - C06]]

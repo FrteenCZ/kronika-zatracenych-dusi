@@ -32,11 +32,6 @@ katedra: KMA
 
 ---
 
-# Úkoly & Deadlines
-- [ ] 
-
----
-
 # Přehled hodin
 
 - [[LAA - P01a]]
@@ -47,3 +42,6 @@ katedra: KMA
 - [[LAA - P04]]
 - [[LAA - P05a]]
 - [[LAA - P05b]]
+- [[LAA - P06]]
+- [[LAA - P07a]]
+- [[LAA - P07b]]

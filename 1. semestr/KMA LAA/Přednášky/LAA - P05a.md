@@ -180,8 +180,8 @@ Regulární matici lze pomocí řádkových elementárních úprav převést na 
 
 Provádět řádkovou elementární úpravu matice je totéž jako násobit matici zleva vhodnou řádkovou elementární maticí. Totéž platí pro sloupcové elementární úpravy a násobení zprava vhodnou sloupcovou elementární maticí.
 
-> [!quote] Lemma 7.
->  Nechť ${}\mathbf{A}{}$ je čtvercová matice řádu ${}n{}$, nechť ${}\mathbf{T}{}$ je řádková elementární matice řádu ${}n{}$. Potom ${}\det \mathbf{TA} = \det \mathbf{T} \cdot \det \mathbf{A}{}$.
+**Poznámka**:
+Nechť ${}\mathbf{A}{}$ je čtvercová matice řádu ${}n{}$, nechť ${}\mathbf{T}{}$ je řádková elementární matice řádu ${}n{}$. Potom ${}\det \mathbf{TA} = \det \mathbf{T} \cdot \det \mathbf{A}{}$.
 
 > [!quote] Věta 8.
 > Nechť existuje součin ${}\mathbf{AB}{}$ matic ${}\mathbf{A}{}$, ${}\mathbf{B}{}$. Potom ${}\mathrm{h}(\mathbf{AB}) \leq \min \{ \mathrm{h}(\mathbf{A}),\mathrm{h}(\mathbf{B}) \}{}$.

@@ -15,15 +15,21 @@ katedra: KMA
 >  1. vyměnění dvou řádků (resp. sloupců) matice,
 >  2. vynásobení řádku (resp. sloupce) matice nenulovým číslem,
 >  3. přičtení ${}k{}$-násobku ${}j{}$-tého řádku (resp. sloupce) k řádku (resp. sloupci) ${}i{}$-tému, ${}i \neq j, 1 \leq i, j \leq m{}$ ( resp. ${}1 \leq i, j \leq n{}$)
+>  
 >  se nazývají **elementární řádkové (resp. sloupcové) úpravy** matice ${}\mathbf{A}{}$.
+
+#fixme : example
 
 
 > [!note] Definice
 > Řekneme, že matice ${}\mathbf{A}{}$ je ve **stupňovitém tvaru**, jestliže platí:
 > je-li v některém řádku ${}i{}$-tý prvek první nenulový, potom ve všech dalších řádkách jsou všechny prvky od 1. až do ${}i{}$-tého včetně rovny ${}0{}$.
 
+#fixme : example
+
 Matici lze pomocí řádkových elementárních úprav převést na matici ve stupňovitém tvaru.
 **Postup se nazývá Gaussova eliminační metoda**.
+#fixme : example
 
 
 > [!note] Definice 
@@ -75,3 +81,4 @@ a_{m1}x_{1}+a_{m2}x_{2}+\dots +a_{mn}x_{n}&=b_{m},
 > [!quote] Věta 1 
 > Jestliže matice ${}[\mathbf{C}|d]{}$ vznikne z matice ${}[\mathbf{A}|b]{}$ užitím řádkových elementárních úprav, potom soustavy lineárních rovnic ${}\mathbf{A}x = b{}$ a ${}\mathbf{C}x = d{}$ jsou ekvivalentní.
 
+#fixme : example

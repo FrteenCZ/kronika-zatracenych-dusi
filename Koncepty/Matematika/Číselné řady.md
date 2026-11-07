@@ -220,3 +220,121 @@ katedra: KMA
 > 2) ${}\lim_{ n \to \infty }\sqrt[n]{ a_{n} }>1\implies \sum_{n=1}^{\infty}a_{n}{}$ div.
 > 
 > **Poznámka**: ${}\lim_{ n \to \infty }\sqrt[n]{ a_{n} }=1\implies ?{}$ 
+
+#fixme : umístit na správné místo
+**Poznámka** (ke srovnávacímu kritériu):
+Pokud ${}0\leq a_{n} \leq b_{n}{}$ p.s.v. ${}n\in \mathbb{N}{}$
+Potom řadu ${}\sum_{n=1}^{\infty}a_{n}{}$ nazýváme **minoranta** a ${}\sum_{n=1}^{\infty}b_{n}{}$ **majoranta**
+
+> [!example]
+> # 1
+> 
+> $$
+> \sum_{n=1}^{\infty} \frac{n+5}{n!}
+> $$
+> NDK: ${}\lim_{ n \to \infty } \frac{n+5}{n!}=\lim_{ n \to \infty }\left( \frac{n}{n!}+\frac{5}{n!} \right)=0~\checkmark{}$
+> 
+> 
+> $$
+> \frac{a_{n+1}}{a_{n}}=\frac{\frac{(n+1)+5}{(n+1)!}}{\frac{n+5}{n!}}=\frac{n+6}{(n+1)n!}\cdot \frac{n!}{n+5}= \frac{n+6}{(n+1)(n+5)}= \frac{n\left( 1+ \frac{6}{n} \right)}{n^{2}\left( 1+\frac{6}{n}+\frac{5}{n^{2}} \right)}\to 0<1
+> $$
+> 
+> # 2
+> 
+> $$
+> \sum_{n=1}^{\infty}  \frac{1}{(1+(-1)^n)^n}
+> $$
+> 
+> $$
+> a_{n}=\begin{cases}
+> \left( \frac{1}{2} \right)^n & n \text{ lichá} \\
+> \left( \frac{1}{4} \right)^n & n \text{ sudá}
+> \end{cases}
+> $$
+> 
+> $$
+> \frac{a_{n+1}}{a_{n}}=\begin{cases}
+> 2^{n-1}  & >1 & n \text{ liché}  \\
+> 2^{-n-2} & <1 & n \text{ sudé} 
+> \end{cases}\implies \text{ podílové kriterium nelze použít}
+> $$
+> 
+> 
+> $$
+> \sqrt[n]{ a_{n} } \leq \sqrt[n]{ \frac{1}{2^n} }=\frac{1}{2}=q<1 \implies \text{řada je konv.}
+> $$
+> 
+> # 3
+> 
+> $$
+> \sum_{n=1}^{\infty} \left( \frac{10}{11} \right)^n\cdot n^5
+> $$
+> NPK: DCV
+> 
+> $$
+> \sqrt[n]{ a_{n} }=\sqrt[n]{ \left( \frac{10}{11} \right)^n \cdot n^5 }=\sqrt[n]{ \left( \frac{10}{11} \right)^n }\cdot \sqrt[n]{ n^5 }=\frac{10}{11} \cdot \left( \sqrt[n]{ n } \right)^5 \to \frac{10}{11}\cdot 1^5=\frac{10}{11}<1\implies \text{je konv.}
+> $$
+> 
+
+
+# Alternující řady
+
+> [!note] Definice (alternující řady)
+> Předpokládáme, že ${}a_{n}>0~~ \forall n\in \mathbb{N}{}$. **Alternující řadou** rozumíme řadu 
+> 
+> $$
+> \sum_{n=1}^{+\infty} (-1)^{n+1}a_{n}=a_{1}-a_{2}+a_{3}-a_{4}+a_{5}-a_{6}+\dots
+> $$
+
+> [!example]-
+> $$
+\sum_{n=1}^{\infty} (-1)^{n+1} \cdot \frac{1}{n}=\sum_{n=1}^{\infty}  \frac{(-1)^{n+1}}{n} \text{ alt. harmonická řada}
+> $$
+
+> [!quote] Věta (Leibnizovo kritérium)
+> ${}a_{n}>0~~\forall n\in \mathbb{N}{}$ Předp.:
+> 1) ${}a_{n+1}\leq a_{n}{}$ p.s.v. ${}n\in \mathbb{N}{}$
+> 2) ${}\lim_{ n \to \infty }a_{n}=0{}$
+> 
+> ${}\implies \sum_{n=1}^{\infty}(-1)^{n+1}a_{n}{}$ **je konvergentní**
+
+> [!example]-
+> ${}a_{n}= \frac{1}{n}{}$
+> 
+> 1) ${}\checkmark{}$
+>    $$
+>    \begin{align}
+>    a_{n+1}&\leq a_{n} \\
+>    0&\leq 1
+>    \end{align}
+>    $$
+> 
+> 2) ${}\checkmark{}$
+>       
+>    $$
+>    \lim_{ n \to \infty } \frac{1}{n}=0
+>    $$
+> 
+> 
+> $$
+> \implies \sum_{n=1}^{\infty}  \frac{(-1)^{n+1}}{n} \text{ je konvergentní}
+> $$
+
+[!done]- Důkaz
+1 ${}a_{n}\leq a_{n}{}$ Búno ${}\forall n\in \mathbb{N}{}$ ... ${}(a_{n}){}$ ke klesající
+${}a_{n+1}-a_{n}\leq 0~~\forall n\in \mathbb{N}{}$
+${}(s_{n}){}$ posl. částečných součtů: ${}(s_{2p}){}$ ... sudé č. součty, ${}(s_{2p+1}){}$ ... liché č. součty
+
+${}(s_{2p}){}$: 
+1) je rostoucí
+   ${}s_{2p+2}=s_{2p}+a_{2p+1}-a_{2p+2} \geq s_{2p}{}$
+
+2) je omezená shora
+   $$
+   \begin{align}
+   s_{2p}&=a_{1}-a_{2}+a_{3}-a_{4}+a_{5}-a_{6}+\dots-a_{2p-2}+a_{2p-1}-a_{2p} \\
+   &=a_{1}-(a_{2}-a_{3})-(a_{4}-a_{5})-(a_{6}-a_{7})-\dots-(a_{2p-2}-a_{2p-1})-a_{2p} \\
+   &\leq a_{1}-a_{2p}<a_{1}
+   \end{align}
+   $$
+${}\overset{\text{PPK}}{\implies}{}$ #fixme : doplň

@@ -7,7 +7,7 @@ date: 13-10-2026
 
 > **Téma:** 
 > **Koncepty:** [[Matice]] [[Matice#Determinant]]
-> **Zdroj**: [[dcv-2-2011.pdf]]
+> **Zdroj**: [[Domácí cvičení 2.pdf]]
 
 
 # Maticové rovnice
